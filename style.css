@@ -1,0 +1,185 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    width: 17%;
+    position: fixed;
+    z-index: 100;
+    top: 53px;
+    left: 0px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: white;
+}
+div.logo{
+    width: 12%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    height: 52px;
+    background-color: white;
+    padding: 18px 0px 0px 72px;
+}
+div.logo img{
+    width: 90px;
+}
+nav div ul{
+    display: block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+nav div ul li{
+    display: block;
+}
+nav div ul li a:hover{
+    background-color: lightskyblue;
+}
+nav button:hover{
+    background-color: lightskyblue;
+}
+nav div ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 0px 10px 72px;
+}
+nav div button{
+    border: none;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 0px 10px 72px;
+
+}
+nav div.hidden ul#hide{
+    display: none;
+}
+button#more, button#less{
+    width: 100%;
+    padding: 10px 0px 10px 72px;
+    text-align: left ;
+}
+nav div.hidden button#more:focus ~ ul#hide{
+    display: block;
+}
+nav div.hidden button#more:focus ~ button#less{
+    display: block;
+}
+nav h3{
+    margin-left: 30px;
+}
+
+nav address{
+    display: block;
+    padding: 10px 30px;
+    text-align: justify;
+}
+header{
+    border-bottom: 2px solid lightgray;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    height: 52px;
+    width: 83%;
+    background-color: white;
+}
+header div.container1{
+    display: inline-flex;
+    width: fit-content;
+    height: 52px;
+    padding-left: 12%;
+    align-items: center;
+
+}
+header div.container1 input{
+    display: inline-block;
+    width: 550px;
+    height: 40px;
+    border: 1px solid gray;
+    vertical-align: middle;
+}
+header div.container1 button.find{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    border: 1px solid gray;
+}
+header div img{
+    display: inline-block;
+    width: 20px;   
+}
+header div a{
+    margin-left: 25px;
+    background-color: transparent;
+}
+header div.container2{
+    display: inline-flex;
+    width: fit-content;
+    height: 52px;
+    float: right;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+div.heading{   
+    border-bottom: 2px solid lightgray;
+    width: 83%;
+    z-index: -1;
+    height: 50px;
+    position: fixed;
+    display: flex;    
+    top: 50px;
+    left: 17%;
+    background-color: white;
+}
+div.heading ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+    width: max-content;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+div.heading ul li{
+    display: inline-flex;
+    height: 52px;
+    align-items: center;
+}
+div.heading ul li a{
+    text-decoration: none;
+    padding: 7px 15px;
+    margin: 0px 5px;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 25px;
+    background-color: white;
+}
+main{
+    position: absolute;
+    z-index: -100;
+    overflow: scroll;
+    display: inline-flex;
+    margin: 0px;
+    top: 105px;
+    left: 17%;
+    width: 83%;
+    height: max-content;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+}
+main div iframe{
+    display: inline-flex;
+    width: 280px;
+    height: 158px;
+    margin: 10px;
+    background-color: white;
+}
